@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <h2>Welcome to add review:</h2>
+  Element id: <%= eid%>
+     <form action="/doAddreview" method="post" class="doAddreview">
+     <input type="text" class="form-control" name="inputReview" id="inputReview" placeholder="Content">
+     <input type="text" class="form-control" name="inputRate" id="inputRate" placeholder="Rate">
+     <input type="text" class="form-control" name="inputEleId" id="inputEleId" placeholder="Element ID">
+  	 <button type="submit" >Add</button>
+     </form>
+  </body>
+</html>

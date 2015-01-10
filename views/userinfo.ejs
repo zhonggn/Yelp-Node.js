@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+   
+   First name: <%= userfname%> <br>
+   Last name: <%= userlname%><br>
+   Last Login Time: <%= llogin%>
+    <div>Reviews: <br>
+    
+      <%for(var i=0; i<eNameCont.length;i++){%>
+       <div> To: <%= eNameCont[i].ename%><br>
+       Content: <%= eNameCont[i].content%><br>
+       Rate: <%= eNameCont[i].rating%><br>
+       </div>
+       <%}%>
+    </div>
+   
+  </body>
+</html>

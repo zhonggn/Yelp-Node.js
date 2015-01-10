@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+     <%- message%>
+    <form action="/doDeleteCat" method="post" class="doDeleteCat">
+    	<input type="text" class="form-control" name="inputCategory" id="inputCategory" placeholder="Category name">
+    	<button type="submit" class="btn btn-primary">Delete</button>
+    </form>
+  </body>
+</html>
